@@ -1,56 +1,62 @@
 /* General body styles */
 body {
-    font-family: 'Garamond', 'Georgia', serif;
-    background-color: #faf3d7;
-    color: #000000;
+    font-family: 'Merriweather', 'Georgia', serif; /* Use a classic serif font */
+    background-color: #f9f9f9; /* Subtle off-white background */
+    color: #000000; /* Black text for readability */
     text-align: center;
     padding: 20px;
     margin: 0;
+    line-height: 1.8; /* Add more line spacing for readability */
 }
 
 /* Container styles */
 .container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background-color: #fffbe8;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e1e1e1;
+    max-width: 700px; /* Increase max-width to allow text more space */
+    margin: 40px auto; /* Add vertical margin for breathing room */
+    padding: 40px; /* Add more padding inside the container */
+    background-color: #ffffff; /* White background for the container */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border: 1px solid #e1e1e1; /* Subtle border */
+    border-radius: 0; /* Remove rounded corners for a sharper look */
 }
 
-/* Header */
+/* Header styles */
 h1 {
-    font-family: 'Garamond', 'Georgia', serif;
-    color: #333;
-    font-size: 32px;
+    font-family: 'Merriweather', 'Georgia', serif; /* Maintain classic serif */
+    color: #333; /* Dark gray for a softer contrast */
+    font-size: 36px; /* Increase header font size */
+    margin-bottom: 30px; /* Space below header */
 }
 
 /* Input field styling */
 input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-family: 'Garamond', 'Georgia', serif;
+    width: 90%; /* Expand input width */
+    padding: 15px; /* Add more padding for touch-friendly design */
+    font-size: 18px; /* Increase font size */
+    border: 2px solid #ccc; /* Simple border */
+    margin-bottom: 20px; /* More spacing between inputs */
+    font-family: 'Merriweather', 'Georgia', serif; /* Serif font for inputs */
+    background-color: #f9f9f9; /* Subtle background to inputs */
+    box-shadow: none; /* Remove default browser shadow */
+    border-radius: 0; /* Remove rounded corners */
 }
 
 /* Button styles */
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
+    padding: 12px 30px; /* Increase padding for larger, easier-to-click buttons */
+    font-size: 18px; /* Larger font size for buttons */
+    background-color: #333; /* Dark gray for a softer look than black */
     color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-family: 'Garamond', 'Georgia', serif;
+    margin-top: 20px; /* Add spacing above buttons */
+    font-family: 'Merriweather', 'Georgia', serif; /* Keep buttons in serif */
+    border-radius: 0; /* Remove rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #555; /* Slightly lighter gray on hover */
 }
 
 /* Hidden sections */
@@ -60,19 +66,20 @@ button:hover {
 
 /* Styling for the message sections */
 #finalMessage, #specificQuestion, #extraInputs, #importanceQuestion, #canYouDoItQuestion, #beKindMessage {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
-    font-family: 'Garamond', 'Georgia', serif;
+    margin-top: 40px; /* More vertical space between sections */
+    font-size: 20px; /* Slightly larger font size for readability */
+    text-align: left; /* Left-align text for a more traditional look */
+    padding: 20px 0; /* Add padding inside each section */
+    border-bottom: 1px solid #e1e1e1; /* Subtle divider between sections */
 }
 
 /* To-do list display */
 #toDoList {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: decimal; /* Numbered list for clear tasks */
+    padding: 0 0 0 20px; /* Align list items properly */
+    font-size: 18px; /* Increase size for readability */
 }
 
 #toDoList li {
-    font-size: 18px;
-    padding: 5px 0;
+    margin-bottom: 15px; /* Add space between list items */
 }
