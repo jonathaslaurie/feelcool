@@ -1,23 +1,32 @@
+/* General body styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    font-family: 'Garamond', 'Georgia', serif;
+    background-color: #faf3d7;
+    color: #000000;
     text-align: center;
     padding: 20px;
+    margin: 0;
 }
 
+/* Container styles */
 .container {
     max-width: 600px;
     margin: auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #fffbe8;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e1e1;
 }
 
+/* Header */
 h1 {
+    font-family: 'Garamond', 'Georgia', serif;
     color: #333;
+    font-size: 32px;
 }
 
+/* Input field styling */
 input[type="text"] {
     width: 80%;
     padding: 10px;
@@ -25,8 +34,10 @@ input[type="text"] {
     border: 2px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
+    font-family: 'Garamond', 'Georgia', serif;
 }
 
+/* Button styles */
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -35,18 +46,33 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Garamond', 'Georgia', serif;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
+/* Hidden sections */
 .hidden {
     display: none;
 }
 
-#finalMessage, #specificQuestion, #extraInputs, #canYouDoItQuestion, #beKindMessage {
+/* Styling for the message sections */
+#finalMessage, #specificQuestion, #extraInputs, #importanceQuestion, #canYouDoItQuestion, #beKindMessage {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
+    font-family: 'Garamond', 'Georgia', serif;
+}
+
+/* To-do list display */
+#toDoList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#toDoList li {
+    font-size: 18px;
+    padding: 5px 0;
 }
