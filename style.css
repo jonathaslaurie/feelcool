@@ -41,12 +41,12 @@ button:hover {
     background-color: #45a049;
 }
 
-#response {
+.hidden {
+    display: none;
+}
+
+#finalMessage, #specificQuestion, #extraInputs, #canYouDoItQuestion, #beKindMessage {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
-}
-
-.hidden {
-    display: none;
 }
