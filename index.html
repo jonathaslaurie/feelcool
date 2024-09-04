@@ -17,38 +17,46 @@
 
         <!-- Specificity Question -->
         <div id="specificQuestion" class="hidden">
-            <p>Ok - do you need to be more specific?</p>
+            <p>Ok - do you need to be more specific? Can you break down the five biggest things which you need to do and which are dragging you down and preventing you from living your best life?</p>
             <button id="yesButton">YES</button>
             <button id="noButton">NO</button>
         </div>
 
         <!-- Extra Input Fields for Specific Answers -->
         <div id="extraInputs" class="hidden">
-            <p>Enter 5 more specific things (if applicable):</p>
-            <input type="text" class="specificInput" placeholder="1. More specific thing...">
-            <input type="text" class="specificInput" placeholder="2. More specific thing...">
-            <input type="text" class="specificInput" placeholder="3. More specific thing...">
-            <input type="text" class="specificInput" placeholder="4. More specific thing...">
-            <input type="text" class="specificInput" placeholder="5. More specific thing...">
+            <p>Enter the five biggest things:</p>
+            <input type="text" class="specificInput" placeholder="1. More specific thing..." id="item1">
+            <input type="text" class="specificInput" placeholder="2. More specific thing..." id="item2">
+            <input type="text" class="specificInput" placeholder="3. More specific thing..." id="item3">
+            <input type="text" class="specificInput" placeholder="4. More specific thing..." id="item4">
+            <input type="text" class="specificInput" placeholder="5. More specific thing..." id="item5">
             <button id="submitSpecificButton">Submit</button>
+        </div>
+
+        <!-- Importance Question -->
+        <div id="importanceQuestion" class="hidden">
+            <p>Are these all equally important?</p>
+            <div id="importanceList"></div>
         </div>
 
         <!-- Second Question -->
         <div id="canYouDoItQuestion" class="hidden">
-            <p>Can you get any of this shit done right now?</p>
+            <p>Can you get any of this shit done right now? Clear it off your desk and make some space in your brain for weird, exciting, unpredictable thoughts, flights of fancy, or time to relax?</p>
             <button id="yesDoItButton">YES</button>
             <button id="noDoItButton">NO</button>
         </div>
 
         <!-- Final Message (For Yes) -->
         <div id="finalMessage" class="hidden">
+            <p>Your to-do list:</p>
+            <ul id="toDoList"></ul>
             <p id="aphorism"></p>
-            <p>I think you should just do this now, and then you can enjoy your day.</p>
+            <p>I think you should just do this now, and then you can enjoy your day. It's flipping insane to live your life worrying about things you can do, allowing the worry to accrete minute by minute when you could be actually clearing the deck and doing cool shit. Please try it. Bash on. You can have a nap afterwards.</p>
         </div>
 
         <!-- Alternative Final Message (For No) -->
         <div id="beKindMessage" class="hidden">
-            <p>Be kind to yourself.</p>
+            <p>OK. Well, be cool anyway. Be kind to yourself. You can return to this later.</p>
         </div>
     </div>
 
