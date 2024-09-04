@@ -1,7 +1,10 @@
+/* Import Source Serif Pro from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;700&display=swap');
+
 /* General body styles */
 body {
-    font-family: 'Merriweather', 'Georgia', serif; /* Use a classic serif font */
-    background-color: #f9f9f9; /* Subtle off-white background */
+    font-family: 'Source Serif Pro', serif; /* Use Source Serif Pro */
+    background-color: #faf3d7; /* Pale yellow/cream background */
     color: #000000; /* Black text for readability */
     text-align: center;
     padding: 20px;
@@ -14,15 +17,15 @@ body {
     max-width: 700px; /* Increase max-width to allow text more space */
     margin: 40px auto; /* Add vertical margin for breathing room */
     padding: 40px; /* Add more padding inside the container */
-    background-color: #ffffff; /* White background for the container */
+    background-color: #fffbe8; /* Slightly lighter pale yellow background for the container */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     border: 1px solid #e1e1e1; /* Subtle border */
-    border-radius: 0; /* Remove rounded corners for a sharper look */
+    border-radius: 0; /* Keep sharp edges for a more traditional look */
 }
 
 /* Header styles */
 h1 {
-    font-family: 'Merriweather', 'Georgia', serif; /* Maintain classic serif */
+    font-family: 'Source Serif Pro', serif; /* Maintain the same font */
     color: #333; /* Dark gray for a softer contrast */
     font-size: 36px; /* Increase header font size */
     margin-bottom: 30px; /* Space below header */
@@ -35,10 +38,10 @@ input[type="text"] {
     font-size: 18px; /* Increase font size */
     border: 2px solid #ccc; /* Simple border */
     margin-bottom: 20px; /* More spacing between inputs */
-    font-family: 'Merriweather', 'Georgia', serif; /* Serif font for inputs */
-    background-color: #f9f9f9; /* Subtle background to inputs */
+    font-family: 'Source Serif Pro', serif; /* Use Source Serif Pro for inputs */
+    background-color: #faf3d7; /* Pale yellow background to inputs */
     box-shadow: none; /* Remove default browser shadow */
-    border-radius: 0; /* Remove rounded corners */
+    border-radius: 0; /* Keep sharp edges */
 }
 
 /* Button styles */
@@ -50,8 +53,8 @@ button {
     border: none;
     cursor: pointer;
     margin-top: 20px; /* Add spacing above buttons */
-    font-family: 'Merriweather', 'Georgia', serif; /* Keep buttons in serif */
-    border-radius: 0; /* Remove rounded corners */
+    font-family: 'Source Serif Pro', serif; /* Keep buttons in serif */
+    border-radius: 0; /* Keep sharp edges */
     transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
@@ -62,6 +65,13 @@ button:hover {
 /* Hidden sections */
 .hidden {
     display: none;
+}
+
+/* Separator for transition between sections */
+.separator {
+    margin: 40px 0;
+    font-size: 24px;
+    color: #aaa; /* Light gray for subtle effect */
 }
 
 /* Styling for the message sections */
