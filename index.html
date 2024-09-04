@@ -10,14 +10,45 @@
     <div class="container">
         <h1>What's Stopping You from Feeling Cool About Stuff?</h1>
         <p>Enter what's stopping you and press the button!</p>
-        
+
+        <!-- First Input -->
         <input type="text" id="userInput" placeholder="Type your answer here...">
         <button id="submitButton">Submit</button>
-        
-        <div id="response" class="hidden">
-            <p>Here's your answer:</p>
-            <p id="userAnswer"></p>
-            <p>Now just do it, and enjoy life!</p>
+
+        <!-- Specificity Question -->
+        <div id="specificQuestion" class="hidden">
+            <p>Ok - do you need to be more specific?</p>
+            <button id="yesButton">YES</button>
+            <button id="noButton">NO</button>
+        </div>
+
+        <!-- Extra Input Fields for Specific Answers -->
+        <div id="extraInputs" class="hidden">
+            <p>Enter 5 more specific things (if applicable):</p>
+            <input type="text" class="specificInput" placeholder="1. More specific thing...">
+            <input type="text" class="specificInput" placeholder="2. More specific thing...">
+            <input type="text" class="specificInput" placeholder="3. More specific thing...">
+            <input type="text" class="specificInput" placeholder="4. More specific thing...">
+            <input type="text" class="specificInput" placeholder="5. More specific thing...">
+            <button id="submitSpecificButton">Submit</button>
+        </div>
+
+        <!-- Second Question -->
+        <div id="canYouDoItQuestion" class="hidden">
+            <p>Can you get any of this shit done right now?</p>
+            <button id="yesDoItButton">YES</button>
+            <button id="noDoItButton">NO</button>
+        </div>
+
+        <!-- Final Message (For Yes) -->
+        <div id="finalMessage" class="hidden">
+            <p id="aphorism"></p>
+            <p>I think you should just do this now, and then you can enjoy your day.</p>
+        </div>
+
+        <!-- Alternative Final Message (For No) -->
+        <div id="beKindMessage" class="hidden">
+            <p>Be kind to yourself.</p>
         </div>
     </div>
 
