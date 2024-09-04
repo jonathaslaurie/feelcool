@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What's Stopping You from Feeling Cool?</title>
+    <title>What's Weighing You Down?</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>What's Stopping You from Feeling Cool About Stuff?</h1>
-        <p>Enter the things that are stressing you out in the field below then press the button!</p>
+        <h1>What's Weighing You Down?</h1>
+        <p>Tell me what's on your mind. What’s stopping you from feeling cool about things?</p>
 
         <!-- First Input -->
         <input type="text" id="userInput" placeholder="Type your answer here...">
         <button id="submitButton">Submit</button>
 
+        <!-- Visual Separator -->
+        <p class="separator">---</p>
+
         <!-- Specificity Question -->
         <div id="specificQuestion" class="hidden">
-            <p>Ok - do you need to be more specific? Can you break down the five biggest things which you need to do and which are dragging you down and preventing you from living your best life?</p>
+            <p>Would breaking it down help? List the five biggest things weighing you down or preventing you from feeling your best.</p>
             <button id="yesButton">YES</button>
             <button id="noButton">NO</button>
         </div>
 
+        <!-- Visual Separator -->
+        <p class="separator hidden">---</p>
+
         <!-- Extra Input Fields for Specific Answers -->
         <div id="extraInputs" class="hidden">
-            <p>Enter the five biggest things:</p>
+            <p>What are the five key things? Break it down here:</p>
             <input type="text" class="specificInput" placeholder="1. More specific thing..." id="item1">
             <input type="text" class="specificInput" placeholder="2. More specific thing..." id="item2">
             <input type="text" class="specificInput" placeholder="3. More specific thing..." id="item3">
@@ -33,30 +39,44 @@
             <button id="submitSpecificButton">Submit</button>
         </div>
 
+        <!-- Visual Separator -->
+        <p class="separator hidden">---</p>
+
         <!-- Importance Question -->
         <div id="importanceQuestion" class="hidden">
-            <p>Are these all equally important?</p>
+            <p>Are all these equally important to you?</p>
             <div id="importanceList"></div>
         </div>
 
+        <!-- Space for the "ok fuck it" message -->
+        <div id="fuckItMessage" class="hidden">
+            <p id="fuckItText"></p>
+        </div>
+
+        <!-- Visual Separator -->
+        <p class="separator hidden">---</p>
+
         <!-- Second Question -->
         <div id="canYouDoItQuestion" class="hidden">
-            <p>Can you get any of this shit done right now? Clear it off your desk and make some space in your brain for weird, exciting, unpredictable thoughts, flights of fancy, or time to relax?</p>
+            <p>Can you handle any of this right now? Like, immediately. Clearing it out might give you some headspace for something new, inspiring, or just a little peace.</p>
             <button id="yesDoItButton">YES</button>
             <button id="noDoItButton">NO</button>
         </div>
+
+        <!-- Visual Separator -->
+        <p class="separator hidden">---</p>
 
         <!-- Final Message (For Yes) -->
         <div id="finalMessage" class="hidden">
             <p>Your to-do list:</p>
             <ul id="toDoList"></ul>
             <p id="aphorism"></p>
-            <p>I think you should just do this now, and then you can enjoy your day. It's flipping insane to live your life worrying about things you can do, allowing the worry to accrete minute by minute when you could be actually clearing the deck and doing cool shit. Please try it. Bash on. You can have a nap afterwards.</p>
+            <p>I am just a website, but I think you should crack on with stuff right now, and then you can enjoy your day. It's flipping insane to live your life worrying about things you can do, allowing the worry to accrete minute by minute when you could be actually clearing the deck and doing cool shit. Please try it. Bash on. You can have a nap afterwards.</p>
         </div>
 
         <!-- Alternative Final Message (For No) -->
         <div id="beKindMessage" class="hidden">
-            <p>OK. Well, be cool anyway. Be kind to yourself. You can return to this later.</p>
+            <p>That’s okay. Take a breather and be kind to yourself. You can come back to this when you’re ready.</p>
         </div>
     </div>
 
