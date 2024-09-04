@@ -39,7 +39,7 @@ const aphorisms = [
     "If you surrendered to the air, you could ride it. - Toni Morrison",
     "The aim of education is the knowledge, not of facts, but of values. - William S. Burroughs",
     "Arrange whatever pieces come your way. - Virginia Woolf",
-    "I am not a black artist, I am an artist. - Jean-Michel Basquiat",
+    "Whenever you're writing something that's reflective, you have to put yourself through some sort of ordeal just to understand the way you're feeling.. - Damon Albarn",
     "You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete. - Buckminster Fuller",
     "Escape from the architecture of paranoia requires nothing less than the invention of new forms of freedom. - Rem Koolhaas",
     "Life shrinks or expands in proportion to one's courage. - Anaïs Nin",
