@@ -8,6 +8,7 @@ const extraInputs = document.getElementById('extraInputs');
 const submitSpecificButton = document.getElementById('submitSpecificButton');
 const importanceQuestion = document.getElementById('importanceQuestion');
 const importanceList = document.getElementById('importanceList');
+const proceedButton = document.createElement('button'); // Create a proceed button
 const canYouDoItQuestion = document.getElementById('canYouDoItQuestion');
 const yesDoItButton = document.getElementById('yesDoItButton');
 const noDoItButton = document.getElementById('noDoItButton');
@@ -39,7 +40,7 @@ const aphorisms = [
     "If you surrendered to the air, you could ride it. - Toni Morrison",
     "The aim of education is the knowledge, not of facts, but of values. - William S. Burroughs",
     "Arrange whatever pieces come your way. - Virginia Woolf",
-    "Whenever you're writing something that's reflective, you have to put yourself through some sort of ordeal just to understand the way you're feeling.. - Damon Albarn",
+    "I am not a black artist, I am an artist. - Jean-Michel Basquiat",
     "You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete. - Buckminster Fuller",
     "Escape from the architecture of paranoia requires nothing less than the invention of new forms of freedom. - Rem Koolhaas",
     "Life shrinks or expands in proportion to one's courage. - Anaïs Nin",
@@ -107,6 +108,16 @@ function displayImportanceQuestion() {
             displayImportanceQuestion();  // Re-render the list
         });
     });
+
+    // Add the Proceed button after the importance question
+    if (!document.body.contains(proceedButton)) {  // Ensure it’s added only once
+        proceedButton.textContent = 'Proceed';
+        proceedButton.classList.add('proceedButton');
+        importanceQuestion.appendChild(proceedButton);
+    }
+
+    // When clicking Proceed, move to the next step
+    proceedButton.addEventListener('click', showDoItQuestion);
 }
 
 // Function to show "Can you get this done" question
